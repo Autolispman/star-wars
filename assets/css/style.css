@@ -1,0 +1,72 @@
+html {
+    height: 100%;
+}
+body {
+    box-sizing: border-box;
+    background-image: url(../images/bodyBackground.jpg);
+    background-size: cover;
+    height: 100%;
+    
+}
+
+.gameTitleDiv {
+    font-size: 30px;
+    width: 210px;
+    margin: 0 100px;
+    float: right;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.imgDivCharacter {
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    align-items: center;
+    float: left;
+    border: 3px solid green;
+}
+
+.imgClip {
+    width: 85%;
+    height: 67%;
+    margin: 17px 0 0 11px;
+}
+
+.charTitle {
+    text-align: center;
+    margin: 0 0 -15px 0;
+}
+
+.imgDivEnemies {
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    align-items: center;
+    float: left;
+    border: 3px solid black;
+}
+
+.imgDivDefender {
+    width: 150px;
+    height: 150px;
+    background-color: black;
+    align-items: center;
+    float: left;
+    border: 3px solid green;
+    color: white;
+}
+
+.catText {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+
+#darthVader {
+    
+}
+
+
+
+
+
+
