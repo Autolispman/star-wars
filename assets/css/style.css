@@ -10,8 +10,8 @@ body {
 }
 
 .gameTitleDiv {
-    font-size: 30px;
-    width: 210px;
+    font-size: 35px;
+    width: 250px;
     margin: 0 100px;
     float: right;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -33,6 +33,11 @@ body {
 }
 
 .charTitle {
+    text-align: center;
+    margin: 0 0 -15px 0;    
+}
+
+.points {
     text-align: center;
     margin: 0 0 -15px 0;
 }
@@ -58,12 +63,10 @@ body {
 
 .catText {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 20px;
+    font-size: 28px;
+    color: white;
 }
 
-#darthVader {
-    
-}
 
 
 
