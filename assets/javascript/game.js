@@ -6,9 +6,12 @@ $(document).ready(function() {
     let currentYourCharFightPower = 0;
     let currentDefenderFightPower = 0;
     let gameOver = false;
+    let audioElement = document.createElement("audio");
+        audioElement.setAttribute("src", "assets/images/Star Wars Theme Song By John Williams.mp3");
 
     function setupNewGame() {
         $(document).ready(function() {
+            audioElement.pause();
             gameOver = false;
             deleteMessage();
             $("#restart").empty();
@@ -102,6 +105,7 @@ $(document).ready(function() {
                 restart.attr("type", "button");
                 restart.attr("value", "Restart");
                 $("#restart").append(restart).end();
+                audioElement.play();
             }
             else {
                 sendMessage("You have defeated " + currentDefender.get("characterName") + " , you can choose another enemy.")
@@ -153,7 +157,7 @@ $(document).ready(function() {
             }
         });
         return bool;
-    }
+    }  
 
     //Event handler to select your character
     $(document).on("click", ".imgDivCharacter", function() {        
