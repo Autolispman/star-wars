@@ -91,7 +91,7 @@ $(document).ready(function() {
             restart.attr("value", "Restart");
             $("#restart").append(restart).end();
             gameOver = true;
-            return;
+            return true;
         }
         if(currentDefender.get("points") < 1) {
             currentDefender.set("defeated", true);
@@ -111,7 +111,9 @@ $(document).ready(function() {
                 sendMessage("You have defeated " + currentDefender.get("characterName") + " , you can choose another enemy.")
             }
             currentDefender = null;
+            return true;
         }
+        return false;
     }
 
     function checkEnv(evn) {
@@ -222,8 +224,9 @@ $(document).ready(function() {
                 });        
                 sendMessage("You attacked " + currentDefender.get("characterName") + " for " + currentYourCharFightPower + " damage");                
                 sendMessage(currentDefender.get("characterName") + " attacked you back for " + currentDefenderFightPower + " damage");                
-                isBattleOver();
-                calculateFightingPower();                  
+                if(isBattleOver() === false) {
+                    calculateFightingPower();
+                }                
             }
         }
     })
